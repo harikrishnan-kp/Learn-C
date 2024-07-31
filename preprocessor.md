@@ -1,6 +1,10 @@
 ﻿## C Preprocessors
-Preprocessors are programs that process the source code before compilation. Several steps are involved between writing a program and executing a program in C. Let us have a look at these steps before we actually start learning about Preprocessors.
-![enter image description here](https://media.geeksforgeeks.org/wp-content/cdn-uploads/Preprocessor-In-C.png)You can see the intermediate steps in the above diagram. The source code written by programmers is first stored in a file, let the name be “****program.c****“. This file is then processed by preprocessors and an expanded source code file is generated named “program.i”. This expanded file is compiled by the compiler and an object code file is generated named “program.obj”. Finally, the linker links this object code file to the object code of the library functions to generate the executable file “program.exe”.
+Preprocessors are programs that process the source code before compilation. Several steps are involved between writing a program and executing a program in C. 
+
+<img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/Preprocessor-In-C.png">
+
+
+You can see the intermediate steps in the above diagram. The source code written by programmers is first stored in a file, let the name be “****program.c****“. This file is then processed by preprocessors and an expanded source code file is generated named “program.i”. This expanded file is compiled by the compiler and an object code file is generated named “program.obj”. Finally, the linker links this object code file to the object code of the library functions to generate the executable file “program.exe”.
 
 ## Preprocessor Directives in C
 
