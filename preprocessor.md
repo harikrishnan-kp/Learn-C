@@ -15,49 +15,26 @@ Examples of some preprocessor directives are: __#include__, __#define__, __#ifnd
 > ****Note**** Remember that the ****#**** symbol only provides a path to the preprocessor, and a command such as include is processed by the preprocessor program. For example, #include will include the code or content of the specified file in your program.
 
 
-### ****List of preprocessor directives in C****
+### **List of preprocessor directives in C**
 
 The following table lists all the preprocessor directives in C:
-|Preprocessor Directives
 
-Description
+**Preprocessor Directives :  Description**
 
-****#define****
+* **#define**         : Used to define a macro
 
-Used to define a macro
+* **#undef**          : Used to undefine a macro
 
-****#undef****
+* **#include**        : Used to include a file in the source code program
 
-Used to undefine a macro
+* **#ifdef**          : Used to include a section of code if a certain macro is defined by #define
 
-****#include****
+* **#ifndef**         : Used to include a section of code if a certain macro is not defined by #define
 
-Used to include a file in the source code program
+* **#if**             : Check for the specified condition
 
-****#ifdef****
+* **#else**           : Alternate code that executes when #if fails
 
-Used to include a section of code if a certain macro is defined by #define
+* **#endif**          : Used to mark the end of #if, #ifdef, and #ifndef|  |
 
-****#ifndef****
-
-Used to include a section of code if a certain macro is not defined by #define
-
-****#if****
-
-Check for the specified condition
-
-****#else****
-
-Alternate code that executes when #if fails
-
-****#endif****
-
-Used to mark the end of #if, #ifdef, and #ifndef|  |
-
-
-
-
-
-|--sxcs|-axa-|
-| asas | asas |
 
