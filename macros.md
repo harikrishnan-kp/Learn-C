@@ -1,13 +1,16 @@
 ﻿**Macros and its types in C**
-    • In C, a macro is a piece of code in a program that is replaced by the value of the macro. 
-    • Macro is defined by #define directive. Whenever a macro name is encountered by the compiler, it replaces the name with the definition of the macro. 
-    • Macro definitions need not be terminated by a semi-colon(;).
+    - In C, a macro is a piece of code in a program that is replaced by the value of the macro. 
+    - Macro is defined by #define directive. Whenever a macro name is encountered by the compiler, it replaces the name with the definition of the macro. 
+    - Macro definitions need not be terminated by a semi-colon.
+
+	 syntax
+	 #define token value
 
      Example 
-      # define date 31 
+     #define date 31 
        
  - The #define  directive is used to create a macro, which is a rule that the preprocessor follows to perform a text substitution.
-  - #define date 31 means that everywhere the preprocessor sees the token date in the code, it will replace it with 31 before the actual compilation process begins. This substitution is purely textual and occurs before the compiler sees the code. As a result, date  doesn't have a type and doesn't occupy memory as a variable.
+ - #define date 31 means that everywhere the preprocessor sees the token date in the code, it will replace it with 31 before the actual compilation process begins. This substitution is purely textual and occurs before the compiler sees the code. As a result, date  doesn't have a type and doesn't occupy memory as a variable.
 
 **Types of macros in c**
  - object like macros 
@@ -17,13 +20,13 @@
 
 **Object-Like Macros** : It is popularly used to replace a symbolic name with a numerical/variable represented as a constant.
 
-	#include <stdio.h>
-	#define DATE 31
-	int main()
-	{
-      printf("Lockdown will be extended" " upto %d-MAY-2020",DATE);
-      return 0;
-	}
+		#include <stdio.h>
+		#define DATE 31
+		int main()
+		{
+     	printf("Lockdown will be extended" " upto %d-MAY-2020",DATE);
+      	return 0;
+		}
 
 
 
@@ -34,65 +37,65 @@
 A function-like macro is only lengthened if and only if its name appears with a pair of parentheses after it. If we don’t do this, the function pointer will get the address of the real function and lead to a syntax error.
 The macros can take function like arguments, the arguments are not checked for data type. For example, the following macro INCREMENT(x) can be used for x of any data type.
 
-	#include <stdio.h>
-	// Macro definition
-	#define AREA(l, b) (l * b)
+		#include <stdio.h>
+		// Macro definition
+		#define AREA(l, b) (l * b)
 
-	int main()
-	{
-	// Given lengths l1 and l2
-	int l1 = 10, l2 = 5, area;
+		int main()
+		{
+		// Given lengths l1 and l2
+		int l1 = 10, l2 = 5, area;
 
-	// Find the area using macros
-	area = AREA(l1, l2);
-	printf("Area of rectangle" " is: %d",area);
-	return 0;
-	}
-
-	output: Area of rectangle is: 50
-
-
-
-
-
-	#include <stdio.h>
-	// Function-like Macro definition
-	#define min(a, b) (((a) < (b)) ? (a) : (b))
-
-	int main()
-	{
-		// Given two number a and b
-		int a = 18;
-		int b = 76;
-		
-		printf("Minimum value between"
-			" %d and %d is %d\n",
-			a, b, min(a, b));
+		// Find the area using macros
+		area = AREA(l1, l2);
+		printf("Area of rectangle" " is: %d",area);
 		return 0;
-	}
-	output: Minimum value between 18 and 76 is 18
+		}
+
+		output: Area of rectangle is: 50
+
+
+
+
+
+		#include <stdio.h>
+		// Function-like Macro definition
+		#define min(a, b) (((a) < (b)) ? (a) : (b))
+
+		int main()
+		{
+			// Given two number a and b
+			int a = 18;
+			int b = 76;
+			
+			printf("Minimum value between"
+				" %d and %d is %d\n",
+				a, b, min(a, b));
+			return 0;
+		}
+		output: Minimum value between 18 and 76 is 18
 
 **Chain Macros**: Macros inside macros are termed chain macros. In chain macros first of all parent macro is expanded then the child macro is expanded.
 
-// C program to illustrate macros
-#include <stdio.h>
+	 // C program to illustrate macros
+	 #include <stdio.h>
 
-// Macro definition
-#define INSTAGRAM FOLLOWERS
-#define FOLLOWERS 138
+	 // Macro definition
+	 #define INSTAGRAM FOLLOWERS
+	 #define FOLLOWERS 138
 
-// Driver Code
-int main()
-{
-	// Print the message
-	printf("Geeks for Geeks have %dK"
-		" followers on Instagram",
-		INSTAGRAM);
+	 // Driver Code
+	 int main()
+	 {
+     // Print the message
+	 printf("Geeks for Geeks have %dK"
+			" followers on Instagram",
+			INSTAGRAM);
 
-	return 0;
-}
+		return 0;
+	 }
 
-output :Geeks for Geeks have 138K followers on Instagram
+	output :Geeks for Geeks have 138K followers on Instagram
 
 **Multiline macros**: An object-like macro could have a multi-line. So to create a multi-line macro you have to use backslash-newline.
 
