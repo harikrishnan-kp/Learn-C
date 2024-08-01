@@ -52,7 +52,7 @@ The preprocessor doesn’t know about the scope rules of C. Preprocessor directi
 
 <img src="https://media.geeksforgeeks.org/wp-content/uploads/Preprocessor.png" height="300" width="200">
 
-A Preprocessor mainly performs three tasks on the HLL code :
+A Preprocessor mainly performs three tasks on the high level language (HLL) code :
 
 - **Removing comments** : It removes all the comments. A comment is written only for the humans to understand the code. So, it is obvious that they are of no use to a machine. So, preprocessor removes all of them as they are not required in the execution and won’t be executed as well. This file is saved with a ‘.i’ extension (prog.i) which will be input to the compiler. 
 - **File inclusion** : Including all the files from library that our program needs. In HLL we write #include which is a directive for the preprocessor that tells it to include the contents of the library file specified. For example, #include will tell the preprocessor to include all the contents in the library file stdio.h.
