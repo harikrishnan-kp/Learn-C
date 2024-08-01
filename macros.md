@@ -126,6 +126,9 @@ An object-like macro could have a multi-line. So to create a multi-line macro yo
 
 output : Elements of Array are: 1  2  3
 ```
+## **note**
+There are also some [Predefined Macros in C](https://www.geeksforgeeks.org/predefined-macros-in-c-with-examples/) which are useful in providing various functionalities to our program.
+
 
 ## **variables vs macros**
 #define DATE 31     - this is a macros
