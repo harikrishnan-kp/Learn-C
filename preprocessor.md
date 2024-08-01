@@ -37,4 +37,12 @@ The following table lists all the preprocessor directives in C:
 
 * **#endif**          : Used to mark the end of #if, #ifdef, and #ifndef|  |
 
+## **Types of C Preprocessors**
+- There are 4 Main Types of Preprocessor Directives:  
+  - [Macros](https://github.com/harikrishnan-kp/Learn-C/blob/main/macros.md)
+  - File Inclusion
+  - Conditional Compilation
+  - Other directives
+
+
 
