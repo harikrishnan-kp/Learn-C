@@ -70,7 +70,7 @@ output: Area of rectangle is: 50
 	// Given two number a and b
 	int a = 18;
 	int b = 76;		
-	printf("Minimum value between"," %d and %d is %d\n",a, b, min(a, b));
+	printf("Minimum value between" " %d and %d is %d\n",a, b, min(a, b));
 	return 0;
 	}
 
