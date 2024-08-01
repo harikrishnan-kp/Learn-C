@@ -41,8 +41,8 @@ The following table lists all the preprocessor directives in C:
 - There are 4 Main Types of Preprocessor Directives:  
   - [Macros](https://github.com/harikrishnan-kp/Learn-C/blob/main/macros.md)
   - [File Inclusion](https://github.com/harikrishnan-kp/Learn-C/blob/main/file%20inclusion.md)
-  - Conditional Compilation
-  - Other directives
+  - [Conditional Compilation](https://www.geeksforgeeks.org/cc-preprocessors/?ref=lbp)
+  - [Other directives](https://www.geeksforgeeks.org/cc-preprocessors/?ref=lbp)
 
 
 
