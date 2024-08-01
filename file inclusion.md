@@ -17,6 +17,34 @@ Syntax
 ```
 where file_name is the name of the header file to be included. The ‘<‘ and ‘>’ brackets tell the compiler to look for the file in the standard directory.
 
+```
+example
+          // C program to demonstrate the use of file inclusion
+          // directive #include.
+      
+          #include <stdio.h> // includng header file for Standard input/output functions
+          #include <stdlib.h> // includng header file for Standard library functions
+          
+          int main()
+          {
+              // Using  standard input/output functions from stdio.h
+              printf("Hello, Geek!\n");
+          
+              // Using standard library functions
+              int num1 = 10, num2 = 5;
+              int sum = num1 + num2;
+          
+              // displayng the result using printf from stdio.h
+              printf("Sum: %d\n", sum);
+              return 0;
+          }
+```
+```
+Output
+    Hello, Geek!
+    Sum: 15
+
+```
 ### **User-defined Header Files**
 
 When a program becomes very large, it is a good practice to divide it into smaller files and include them whenever needed. These types of files are user-defined header files.
