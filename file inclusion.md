@@ -54,3 +54,7 @@ Syntax
   #include "filename"
 ```
 The double quotes ( ” ” ) tell the compiler to search for the header file in the source file’s directory.
+
+## **note**
+Note: If the filename is enclosed within angle brackets, the file is searched for in the standard compiler include paths. If the filename is enclosed within double quotes, the search path is expanded to include the current source directory. 
+
