@@ -11,13 +11,18 @@ The C program goes through the following phases during compilation:
 
 ## How do we compile and run a C program?
 
-We first need a compiler and a code editor (in our case we are using VIM,we can use nano or cat also) to compile and run a C Program. The below example is of an Ubuntu machine with GCC compiler.
+* We first need a compiler and code editor
+    * code editor helps us write C code. compiler is for converting C source code to binary code.
+    * here we are using
+        * compiler : GCC (GNU Compiler collection) 
+        * code editor : nano,vim,cat or any text editor
+
 * Step 1: Creating a C Source File
 
 We first create a C program using an editor and save the file as filename.c
 
 ```console
- $ vi filename.c
+ $ nano filename.c
 ```
 We can write a simple hello world program and save it.
 * Step 2: Compiling using GCC compiler
