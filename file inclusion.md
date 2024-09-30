@@ -58,3 +58,11 @@ The double quotes ( ” ” ) tell the compiler to search for the header file in
 ## **note**
 Note: If the filename is enclosed within angle brackets, the file is searched for in the standard compiler include paths. If the filename is enclosed within double quotes, the search path is expanded to include the current source directory. 
 
+## note:
+when we include a fille using #include directive the compiler doesnt know the location of header file,the compiler search for header files in the following the lacations
+- curernt directory
+- pre configured standard system directory
+- the directory we explicitly tell to the compliler,we can do that using instruction
+```console
+-I dierctory name 
+``` 
