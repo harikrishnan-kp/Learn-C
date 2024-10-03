@@ -106,3 +106,9 @@ $vi filename.o
 ## 4. Linking
 
 This is the final phase in which all the linking of function calls with their definitions is done. Linker knows where all these functions are implemented. Linker does some extra work also, it adds some extra code to our program which is required when the program starts and ends. For example, there is a code that is required for setting up the environment like passing command line arguments. This task can be easily verified by using $size filename.o and $size filename. Through these commands, we know how the output file increases from an object file to an executable file. This is because of the extra code that Linker adds to our program. 
+
+
+## note:
+- GCC is not just a compiler it is a colllection of toolchains that will help to convert high level lanuguages to binary.
+- GCC too chains include preprocessor,compiler,assembler and linker.
+- Assembly file can be used "s" or "S" extensions.lower case s is generated as the output of compilation.upper case S is used when we are writing a assembly file. usually this file is fed to preprocessor before feeding to assembler. (assembly files may have #include sections)
