@@ -14,6 +14,7 @@
 - C User-Defined Data Types
 - C Storage Classes
 - C Memory Management
+- C build process
 - C Preprocessor
 - C File Handling
 - C Error Handling
@@ -171,6 +172,13 @@
 - Dynamic Array in C
 - Dynamically Allocate a 2D Array in C
 - Dynamically Growing Array in C
+
+### [C build process](https://github.com/harikrishnan-kp/Learn-C/blob/main/C%20build%20process.md)
+- how to build a c program
+- Preprocessing
+- Compiling
+- Assembly
+- Linking
 
 ### C Preprocessor
 
