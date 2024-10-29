@@ -1,5 +1,5 @@
 # Building a C program
-As C is a mid-level language, it need to convert into low level binary code so that the program can be run on our machine. **Build** is the process of converting high level language to executable binary file. tools used in this process named as build **tool chain**. eg : **GCC**, **MINGW** 
+As C is a mid-level language, it need to convert into low level binary code so that the program can be run on our machine. **Build** is the process of converting high level language to executable binary file. this process required a set of tools commonly named as build **tool chain**. eg : **GCC**, **MINGW** 
 
 a typical tool chain includes
 * Preprocessor
@@ -11,8 +11,8 @@ a typical tool chain includes
 
 * Requirements :
     * code editor : helps us write C code. eg- nano,vim,cat or any text editor
-    * builde tool chain : for converting C source code to executable binary code.eg- GCC (GNU Compiler collection)
-    * here we are using nano and gcc
+    * build tool chain : for converting C source code to executable binary code.eg- GCC (GNU Compiler collection)
+    * here we are going to use nano and gcc
 
 * Step 1: Creating a C Source File
 
@@ -21,7 +21,7 @@ create a C program using an editor and save the file as filename.c
 ```console
  $ nano filename.c
 ```
-write a simple hello world printing program and save it.
+write a simple hello world printing program in it and save it.
 * Step 2: build the file using GCC tool chain
 
 use the following command in the terminal for building our source file.
@@ -29,7 +29,7 @@ use the following command in the terminal for building our source file.
 ```console
 $ gcc filename.c
 ```
-if there is no errors in our program you will get a executable binary file named a.out as output 
+if there is no errors in our program you will get a executable binary file named **a.out** as output 
 
 * step 3: enable executable permission to the file and run it
 
