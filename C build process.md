@@ -1,5 +1,5 @@
 # Building a C program
-As C is a mid-level language, it need to convert into low level binary code so that the program can be run on our machine. **Build** is the process of converting high level language to executable binary file. this process required a set of tools commonly named as build **tool chain**. eg : **GCC**, **MINGW** 
+As C is a mid-level language, it need to convert into low level binary code so that the program can be run on our machine. **Build** is the process of converting high level language to executable binary file. this process required a set of tools commonly named as build **tool chain**. eg : **GCC**, **CLANG**, **MINGW**(not sure) 
 
 a typical tool chain includes
 * Preprocessor
@@ -39,9 +39,10 @@ $ ./a.out
 The program will be executed and the output will be shown in the terminal.
 
 ### note
-* We can pass many instructions to the GCC compiler depends upon our needs:
-* The option **-Wall** enables all compiler’s warning messages. This option is recommended to generate better code. 
-* The option **-o** is used to specify the output file name. If we do not use this option, then an output file with the name a.out is generated.
+User can pass different flags along with cli command to change the behaviour of GCC toolchain depends upon our needs:
+* flag **-Wall** enables all compiler warning messages. This option is recommended to generate better code. 
+* flag **-o** is used to specify the output file name. If we do not use this option, then an output file with the name **a.out** is generated.
+* flag **-save-temps** saves all intermediate files in build process
 
 for example
 
