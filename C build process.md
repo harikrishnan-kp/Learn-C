@@ -102,7 +102,7 @@ In the above output, the source file is filled with lots and lots of info, but i
 * #include<stdio.h> is missing instead we see lots of code. So header files have been expanded and included in our source file.
 ## 2. Compiling
 
-The next step is to compile filename.i and produce an; intermediate compiled output file filename.s. This file is in assembly-level instructions. Let’s see through this file using $nano filename.s  terminal command.
+The next step is to compile filename.i and produce an intermediate compiled output file filename.s. This file is in assembly-level instructions. Let’s see through this file using $nano filename.s  terminal command.
 
 <img src="https://media.geeksforgeeks.org/wp-content/uploads/20230406112833/c-compilation-assembly-code.webp">
 
