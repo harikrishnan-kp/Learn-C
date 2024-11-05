@@ -1,5 +1,5 @@
 # Building a C program
-As C is a mid-level language, it need to convert into low level binary code so that the program can be run on our machine. **Build** is the process of converting high level language to executable binary file. this process required a set of tools commonly named as build **tool chain**. eg : **GCC**, **CLANG**, **MINGW**(not sure) 
+As C is a mid-level language, it need to convert into low level binary code so that the program can be run on our machine. **Build** is the process of converting high level language to executable binary file. this process required a set of tools commonly named as build **tool chain**. eg : **GCC**, **LLVM**, **CLANG**, **MINGW**(not sure) 
 
 a typical tool chain includes
 * Preprocessor
@@ -11,7 +11,7 @@ a typical tool chain includes
 
 * Requirements :
     * code editor : helps us write C code. eg- nano,vim,cat or any text editor
-    * build tool chain : for converting C source code to executable binary code.eg- GCC (GNU Compiler collection)
+    * build tool chain : for converting C source code to executable binary code.eg- GCC
     * here we are going to use nano and gcc
 
 * Step 1: Creating a C Source File
@@ -31,33 +31,12 @@ $ gcc filename.c
 ```
 if there is no errors in our program you will get a executable binary file named **a.out** as output 
 
-* step 3: enable executable permission to the file and run it
+* step 3: if required, enable executable permission to the file and run it
 
 ```console
 $ ./a.out
 ```
 The program will be executed and the output will be shown in the terminal.
-
-### note
-User can pass different flags along with cli command to change the behaviour of GCC toolchain depends upon our needs:
-* flag **-Wall** enables all compiler warning messages. This option is recommended to generate better code. 
-* flag **-o** is used to specify the output file name. If we do not use this option, then an output file with the name **a.out** is generated.
-* flag **-save-temps** saves all intermediate files in build process
-
-for example
-
-Give a specific name to executable file
-
-```console
- $ gcc filename.c –o dog
-```
-this will generate an execuatble file dog from filename.c
-
-Generate all intermediate files in build process along with the executable.
-```console
- $ gcc -Wall -save-temps filename.c –o filename 
-```
-
 
 ## Building a C program: behind the scenes
 
@@ -86,7 +65,7 @@ This is the first phase through which source code is passed. This phase includes
 
     * Removal of Comments
     * Expansion of Macros
-    * Expansion of the included files.
+    * Expansion of the header files included.
     * Conditional compilation
 
 The preprocessed output is stored in the filename.i
