@@ -1,5 +1,5 @@
 # C Preprocessors
-Preprocessors are programs that process the source code before compilation. Several steps are involved between writing a program and executing a program in C. 
+Preprocessors are programs that process the source file before compilation. Several steps are involved between writing a program and executing a program in C. 
 
 <img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/Preprocessor-In-C.png" height="300" width="600"> 
 
@@ -8,7 +8,7 @@ You can see the intermediate steps in the above diagram. The source code written
 
 ## Preprocessor Directives in C
 
-Preprocessor programs provide preprocessor directives that tell the compiler to preprocess the source code before compiling. All of these preprocessor directives begin with a ‘#’ (hash) symbol. The ‘#’ symbol indicates that whatever statement starts with a ‘#’ will go to the preprocessor program to get executed. We can place these preprocessor directives anywhere in our program.
+Preprocessor directives are the special instructions that tell the build toolchain to preprocess the source code before compiling. All of these preprocessor directives begin with a ‘#’ (hash) symbol. The ‘#’ symbol indicates that whatever statement starts with a ‘#’ will go to the preprocessor program to get executed. We can place these preprocessor directives anywhere in our program.
 
 Examples of some preprocessor directives are: __#include__, __#define__, __#ifndef,__ etc.
 
