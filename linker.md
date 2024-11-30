@@ -20,4 +20,4 @@
 # linker and locator
 linker and locator combination assigns unique absolute addresses to different sections of output file by referring to address information mentioned in the linker script
 
-Example linker script written for B-L072Z-LRWAN1 can be found [here]("img & supporting docs/STM32L072CZYX_FLASH.ld")
+Example linker script written for B-L072Z-LRWAN1 can be found [here]("https://github.com/harikrishnan-kp/Learn-C/blob/a1f204f27ffeabf4445a1fe6e601a0152b8198a8/img%20%26%20supporting%20docs/STM32L072CZYX_FLASH.ld")
