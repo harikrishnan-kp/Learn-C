@@ -1,7 +1,7 @@
 
-<img src=img/buildcommand1.png>
+<img src=utils/buildcommand1.png>
 
-<img src= img/buildcommand2.png>
+<img src=utils/buildcommand2.png>
 
 make file came into play when we want to build a big project with multiple source files
 
