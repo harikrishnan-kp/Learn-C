@@ -14,4 +14,4 @@ you can see that manual building required a big terminal command when we need to
 * make file will organize and keep track of our build process
 * make file describes how to get a certain output from a set of inputs
 
-<img src="img/makefile.png" height=500>
+<img src=utils/makefile.png>

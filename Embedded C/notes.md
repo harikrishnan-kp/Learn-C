@@ -7,3 +7,5 @@ in embedded c
 * use ctrl + spacebar for auto completion 
 * use ctrl for going the source of function definition
 * stmcube IDE is linked with stmcubemx,stmcube analyzer and stmcube programmer  
+
+<img src=utils/stmcube.png>
