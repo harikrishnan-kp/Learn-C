@@ -1,5 +1,5 @@
 # Building a C program
-As C is a mid-level language, it need to convert into low level binary code so that the program can be run on our machine. **Build** is the process of converting high level language to executable binary file. this process required a set of tools commonly named as build **tool chain**. eg : **GCC**, **LLVM**, **CLANG**, **MINGW**(not sure) 
+As C is a mid-level language, it need to convert into low level binary code so that the program can be run on our machine. **Build** is the process of converting high level language to executable binary file. this process required a set of tools commonly named as build **tool chain**. eg : **GCC**, **TI**, **LLVM**, **CLANG**, **MINGW**(not sure) 
 
 a typical tool chain includes
 * Preprocessor
