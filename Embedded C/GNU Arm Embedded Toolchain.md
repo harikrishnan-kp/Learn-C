@@ -58,13 +58,33 @@ eg:
 * -O : (capital O) used to specify the level of optimization in our code .
     * by default gcc do not do optimization.we can control the level of optimization by changing optimization level.
     * note: optimization make debugging difficult
+
 ```bash
 syntax: 
      -O<optimization level>
 eg:
-    * arm-none-eabi-gcc -O0 main.c # no optimization (default)
-    * arm-none-eabi-gcc -O1 main.c # basic optimization
-    * arm-none-eabi-gcc -O2 main.c # more optimizations
-    * arm-none-eabi-gcc -O3 main.c # aggressive optimizations
-    * arm-none-eabi-gcc -Os main.c # optimize for size
-    * arm-none-eabi-gcc -Ofast main.c # fast optimizations, may violate strict standards
+    arm-none-eabi-gcc -O0 main.c # no optimization (default)
+    arm-none-eabi-gcc -O1 main.c # basic optimization
+    arm-none-eabi-gcc -O2 main.c # more optimizations
+    arm-none-eabi-gcc -O3 main.c # aggressive optimizations
+    arm-none-eabi-gcc -Os main.c # optimize for size
+    arm-none-eabi-gcc -Ofast main.c # fast optimizations, may violate strict standards
+```
+* -M family of flags : used to generates dependency information file **.d**
+    * note: **.d** files are dependency files generated during the compilation process that track source file dependencies on header files.This file contains information about which files need to be recompiled if one of the included header files changes.  
+    * -MD: Generates a **.d** file alongside the object file (.o) without including system header dependencies.
+    * -MMD: Similar to -MD, but it excludes system header files from the dependencies in the .d file (useful for keeping dependency files smaller and more focused).
+    * -MF <file_path>: Specifies the name and location of the dependency file.
+    * -MP: Adds phony targets for dependencies to avoid errors if a file is removed
+    
+```bash
+eg:
+    gcc -c -MMD -MP -MF hello.d main.c -o main.o
+```
+* -fstack-usage : used Generate stack usage files **.su** during compilation
+    * **.su** files are intermediate status files used to track the compilation status of files during the build process.
+    *  These files can be used to speed up future builds by indicating which files are already up-to-date and don't need recompilation.
+```bash
+eg: 
+    gcc -c -fstack-usage main.c -o main.o
+```    
