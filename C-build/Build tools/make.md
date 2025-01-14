@@ -1,18 +1,15 @@
 # make
-make is a program that came into play when we are building a big project with multiple source files
-
-you can see that manual building required a big terminal command when we need to pass a lot of flags and options to tool chain.
-
-* one big terminal command make it hard to read and understand
-* it is also inefficient, beacause it will build every file in the project eachtime,it is not required when we need to change and build only one file.
-* inorder to overcome these problems, we can use make.
-
-
-
 make is a build automation tool commonly used in software development to:
 * Compile and link source code into executable programs.
 Manage dependencies between files.
 * Automate repetitive tasks like testing, deployment, or cleanup.
+
+## Usage
+* Make is  very usefull when we are building a big project with multiple source files
+* Manual building of this project may required a big terminal command with lots flags and options to tool chain.
+* one big terminal command make it hard to read, understand and maintain.
+* it is also inefficient, beacause it will build every file in the project eachtime, eventhough we modified only one or two source files.
+* inorder to overcome these problems, we can use make.
 
 ## Key Features of make
 * Dependency Management : Automatically checks if a file is out of date by comparing timestamps.Only recompiles what’s necessary, saving time.
@@ -33,7 +30,7 @@ make reads a set of rules and dependencies from a Makefile, and determines which
 * Flexibility: Can handle projects with multiple files,directories, and configurations.
 
 ## Structure of Makefile
-<img src=utils/makefile.png width=450>
+<img src=../../utils/makefile.png width=450>
 
 ## Example Makefile
 ```bash
@@ -97,6 +94,7 @@ target: dependencies
 # % is a wildcard matching filenames
 # $< is the first dependency (e.g., main.c)
 # $@ is the target (e.g., main.o).
+# $^ is the source
 ```
 4. **Phony Rules** : Used to define tasks that don’t generate files (e.g., clean, all)
 ```bash
@@ -106,14 +104,14 @@ target: dependencies
         rm -f *.o program
 ```
 
-## Targets:
-* by default makefile execution start with the first target in the file
+## where does the execution start in make file
+* By default makefile execution start with the first rule by building it`s target
+* and then recursively solve other rules
+* usually **all** is used as the first target in the makefile, it provides a standardized, user-friendly way to build an entire project.
 * additionally there is an option for users to specify which target need to be executed first.
 ```bash 
-eg: make all
+eg: make hi
 ```
-* usually **all** is used as the first target in the makefile, it provides a standardized, user-friendly way to build an entire project.
-
 ## Variables
 varibles are use to store values in makefile
 * as per standard all varible names are in capital format and declared at the top of make file 
@@ -173,7 +171,12 @@ eg:
 ```
 
 
-# Reffernces 
-<img src=utils/buildcommand1.png>
+# Refferences 
+<img src=../../utils/buildcommand1.png>
 
-<img src=utils/buildcommand2.png>
+<img src=../../utils/buildcommand2.png>
+
+## notes
+* make can be used for flashing too
+* Cmake is also similar to make, but advanced than make.
+* Cmake can generate make files

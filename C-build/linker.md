@@ -25,9 +25,9 @@
     * By using memory command, you can fine-tune various memories available in your target and allow different sections to occupy different memory areas
     * Typically one linker script has one memory command
 
-<img src="utils/linker/linkermem2.png">
+<img src="../utils/linker/linkermem2.png">
 
-<img src="utils/linker/linkermem3.png">
+<img src="../utils/linker/linkermem3.png">
 
 ### note
 * in linker we cant declare variables for storing information (that is only possible in c),instead we need to do symbols for storing momentory data
@@ -35,4 +35,4 @@
 # linker and locator
 linker and locator combination assigns unique absolute addresses to different sections of output file by referring to address information mentioned in the linker script
 
-Example linker script written for B-L072Z-LRWAN1 can be found [here]("utils/linker/STM32L072CZYX_FLASH.ld")
+Example linker script written for B-L072Z-LRWAN1 can be found [here]("../utils/linker/STM32L072CZYX_FLASH.ld")
