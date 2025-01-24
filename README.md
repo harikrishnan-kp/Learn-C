@@ -96,7 +96,7 @@
 - break Statement in C
 - goto Statement in C
 
-### C Functions
+### [C Functions](function.md)
 
 - C Functions
 - User-Defined Function in C
@@ -173,8 +173,8 @@
 - Dynamically Allocate a 2D Array in C
 - Dynamically Growing Array in C
 
-### [C build process](https://github.com/harikrishnan-kp/Learn-C/blob/main/C%20build%20process.md)
-- how to build a c program
+### [C build process](C-build/C%20build%20process.md)
+- how to build a C program
 - Preprocessing
 - Compiling
 - Assembly

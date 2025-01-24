@@ -1,9 +1,9 @@
 ﻿# **Macros and its types in C**
-- In C, a macro is a piece of code in a program that is replaced by the value of the macro. 
-- Macro is defined by **#define** directive. Whenever a macro name is encountered by the compiler, it replaces the name with the definition of the macro. 
+- A macro is a piece of code in a C program that is replaced by the value of the macro. 
+- Macro is defined by `#define` directive. Whenever a macro name is encountered by the compiler, it replaces the name with the definition of the macro. 
 - Macro definitions do not need a semi-colon termination.
 
-```console
+```bash
 syntax
 	#define token value
  ```
@@ -11,13 +11,12 @@ syntax
 Example 
 	#define date 31
 ```       
-- The #define  directive is used to create a macro, which is a rule that the preprocessor follows to perform a text substitution.
-- #define date 31 means that everywhere the preprocessor sees the token date in the code, it will replace it with 31 before the actual compilation process begins. This substitution is purely textual and occurs before the compiler sees the code. As a result, date  doesn't have a type and doesn't occupy memory as a variable.
+- `#define date 31` means that everywhere the preprocessor sees the token date in the code, it will replace it with 31 before the actual compilation process begins. This substitution is purely textual and occurs before the compiler sees the code. As a result, date  doesn't have a type and doesn't occupy memory as a variable.
 
 ## **Types of macros in c**
  - Object like macros 
- - chain macros
- - function like macros 
+ - Chain macros
+ - Function like macros 
  - Multi-Line Macros
 
 ### **Object-Like Macros**
@@ -150,6 +149,4 @@ int DATE = 31;      this is a variable
 - When to Use Each:
 	- Use #define for constants that you don't expect to change and when you need simple text substitution.
  	- Use a variable declaration (int DATE = 31;) when you need a typed constant or a value that can be modified during the program execution.
-
-## **common Notes**
-- in embedded c programming main function is not needed but when we write a c program to work in an OS its important to use main function. 
+ 
