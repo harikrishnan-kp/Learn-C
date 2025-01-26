@@ -31,9 +31,16 @@
 - C Hello World Program
 - Compiling a C Program: Behind the Scenes
 - C Comments
-- Tokens in C
-- C Identifiers
-- Keywords in C
+
+### [Tokens in C](tokens%20in%20C/1-tokens.md) 
+- [intro](tokens%20in%20C/1-tokens.md)
+- [punctuations](tokens%20in%20C/2-punctuators.md)
+- [Keywords](tokens%20in%20C/3-keywords.md)
+- [strings](tokens%20in%20C/4-string.md)
+- [Identifiers](tokens%20in%20C/5-Identifiers.md)
+- [constants](tokens%20in%20C/6-Constants.md)
+- [operators](tokens%20in%20C/7-Operators.md)
+
 
 ### C Variables and Constants
 
@@ -46,7 +53,6 @@
 - Global Variables in C
 
 ### C Data Types
-
 - Data Types in C
 - Data Type Modifiers in C
 - Literals in C
@@ -57,7 +63,6 @@
 - Type Conversion in C
 
 ### C Input/Output
-
 - Basic Input and Output in C
 - Format Specifiers in C
 - printf in C
@@ -65,22 +70,7 @@
 - Scansets in C
 - Formatted and Unformatted Input and Output Functions
 
-### C Operators
-
-- Operators in C
-- Arithmetic Operators in C
-- Unary Operators in C
-- Relational Operators in C
-- Bitwise Operators in C
-- Logical Operators in C
-- Assignment Operators in C
-- Increment and Decrement Operators in C
-- Conditional or Ternary Operator (?:) in C
-- size of Operator in C
-- Operator Precedence and Associativity in C
-
 ### C Control Statements Decision-Making
-
 - Decision-Making in C
 - C if Statement
 - C if…else Statement
@@ -97,7 +87,6 @@
 - goto Statement in C
 
 ### [C Functions](function.md)
-
 - C Functions
 - User-Defined Function in C
 - Parameter Passing Techniques in C
@@ -113,7 +102,6 @@
 - Maths Functions in C
 
 ### C Arrays & Strings
-
 - C Arrays
 - Properties of Array in C
 - Multidimensional Arrays in C
@@ -128,7 +116,6 @@
 - String Functions in C
 
 ### C Pointers
-
 - C Pointers
 - Pointer Arithmetics in C
 - Pointer to Pointer (Double Pointer) in C
@@ -142,7 +129,6 @@
 - restrict Keyword in C
 
 ### C User-Defined Data Types
-
 - C Structures
 - dot (.) Operator in C
 - C typedef
@@ -155,7 +141,6 @@
 - Enumeration (or enum) in C
 
 ### C Storage Classes
-
 - Storage Classes in C
 - extern Keyword in C
 - Static Variables in C
@@ -181,7 +166,6 @@
 - Linking
 
 ### C Preprocessor
-
 - C Preprocessors
 - C Preprocessor Directives
 - How a Preprocessor Works in C?
@@ -199,7 +183,6 @@
 - Difference Between #define and const in C
 
 ### C File Handling
-
 - Basics of File Handling in C
 - C fopen() Function
 - EOF, getc() and feof() in C

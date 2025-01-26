@@ -1,7 +1,8 @@
-The linker is responsible for finding the actual definitions of all functions declared in the program and connecting them to the placeholders created during compilation. The linker searches for function definitions in:
-    * Standard Library Paths: The standard library paths are pre-configured during the installation of the compiler.
-    * Custom Libraries:If you're using custom functions, you provide the .c or .o file, or specify the library path during linking.
-    * Default Library Files:The compiler/linker automatically links to libraries like libc for standard functions unless told otherwise.  
+# linker
+The linker is a program responsible for finding the actual definitions of all functions declared in the program and connecting them to the placeholders created during compilation. The linker searches for function definitions in:
+* **Standard Library Paths**: The standard library paths are pre-configured during the installation of the compiler.
+* **Custom Libraries**: If you're using custom functions, you provide the .c or .o file, or specify the library path during linking.
+* **Default Library Files**:The compiler/linker automatically links to libraries like libc for standard functions unless told otherwise.  
 
 ### How Does a Header File inclusion Provide Access to Library Functions?
 * A header file contains function declarations (prototypes), macro definitions, and other definitions necessary to use a library's functions.
@@ -47,3 +48,14 @@ gcc main.c functions.c -o program
 Here:
 * The compiler uses functions.h to check the greet function in main.c.
 * The linker resolves the greet definition from functions.c.
+
+
+### how a compiler find where the function defintion is, from a function declaration in header file
+* consider we included a header file using #include ,that contains declaration of the function we used in our source file
+* when we try to build the main source file
+* preprocessor copy paste the entire content of header file to our main source file.
+* during the compilation phase The compiler uses the function declaration to:
+    * Verify that the function calls in the code match the declaration in terms of return type, argument types, and argument count.
+    *  The declaration in a header file acts as a "promise" that the function exists somewhere, enabling the compiler to compile the code.
+    * Generate an object file for the program but leaves placeholders for the function definitions (these are called undefined symbols). 
+   

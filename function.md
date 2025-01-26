@@ -77,9 +77,6 @@ eg:
 ```
 <img src="utils/function/funCall.png" height="250">
 
-## `Is Function Declaration Necessary?` (need more clarification)
-* A declaration is necessary if the function is called before definition it and if it is used across multiple files.`
-
 ## What is the difference between arguments and parameters?
 * `parameters`:
     * Definition: Parameters are variables defined in the function declaration or definition to receive values when the function is called.
@@ -208,8 +205,8 @@ eg: // add is the user defined function here
 |User defined functions Compiled run time(doubt) | library functions Called run time(doubt)
 
 ## note:
-* function declaration is also called as function prototyping
-* function parameters are also called as arguments
+* function declaration is also called as `function prototyping`
+* function parameters are also called as `arguments`
 *  based on arguments and return value a function can be classified as
     * Function with no arguments and no return value
     * Function with no arguments and with return value
@@ -223,23 +220,10 @@ eg:
 * if you leave the argument section blank,that means that the function can take a variable number of arguments of unknown data type
 * a C function can be return only one value. To return multiple values, we have to use pointers or structures.
 
-## Doubts 
+## FAQ 
 ### Is Function Declaration Necessary?
 * A declaration is necessary if the function is called before its definition and if it is used across multiple files.
 * in other cases function definition is enough
-
-### how a compiler find where the function defintion is, from a function declaration in header file
-* consider we included a header file using #include ,that contains declaration of the function we used in our source file
-* when we try to build the main source file
-* preprocessor copy paste the entire content of header file to our main source file.
-* during the compilation phase The compiler uses the function declaration to:
-    * Verify that the function calls in the code match the declaration in terms of return type, argument types, and argument count.
-    *  The declaration in a header file acts as a "promise" that the function exists somewhere, enabling the compiler to compile the code.
-    * Generate an object file for the program but leaves placeholders for the function definitions (these are called undefined symbols). 
-* Linking Phase: The linker is responsible for finding the actual definitions of all functions declared in the program and connecting them to the placeholders created during compilation. The linker searches for function definitions in:
-    * Standard Library Paths: The standard library paths are pre-configured during the installation of the compiler.
-    * Custom Libraries:If you're using custom functions, you provide the .c or .o file, or specify the library path during linking.
-    * Default Library Files:The compiler/linker automatically links to libraries like libc for standard functions unless told otherwise.    
 
 ### is library files are obj,exutable or pure c files
 ### whar are statis and dynamic library files
