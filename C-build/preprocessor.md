@@ -3,22 +3,23 @@
 
 * Preprocessors are programs that process the source file before compilation.
 * When a C source file is provided to the build toolchain, it is first passed to the preprocessor.
-* The preprocessor processes the file, generating an expanded source file with the extension `.i`.
+* The preprocessor processes the file, generating an expanded source file with the extension `.i`
 * This expanded file is then forwarded to the compiler for further processing.
 
 ## Preprocessor Directives in C
 
-Preprocessor directives are the special instructions that tell the build toolchain to preprocess the source code before compiling. All of these preprocessor directives begin with a `#`symbol. The "#" symbol indicates that whatever statement starts with a ‘#’ will go to the preprocessor program to get executed. We can place these preprocessor directives anywhere in our program.
+* Preprocessor directives are the special instructions that tell the build toolchain to preprocess the source code before compiling.
+* All of these preprocessor directives begin with a `#`symbol.
+* We can place these preprocessor directives anywhere in our program.
 
 ```bash
 # Note
-Remember that the "#" symbol only provides a path to the preprocessor, and a command such as include is processed by the preprocessor program.
-For example, "#include" will include the code or content of the specified file in your program.
+The "#" symbol only provides a path to the preprocessor and the  command after "#" is processed by the preprocessor.
 ```
 
 ### **Preprocessor directives in C**
 
-The following table lists all the preprocessor directives in C:
+The following table lists all the preprocessor directives in C
 
 **Preprocessor Directives and Description**
 

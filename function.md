@@ -204,6 +204,49 @@ eg: // add is the user defined function here
 |User defined functions are part of program.|library functions are part of header files like Stdio.h, conio.h etc
 |User defined functions Compiled run time(doubt) | library functions Called run time(doubt)
 
+## _Noreturn function specifier in C
+ _Noreturn specifier is used to indicate that a function does not return a value. It tells the compiler that the function will either exit the program or enter an infinite loop, so it will never return control to the calling function.
+
+```
+example:
+    #include <stdio.h>
+    #include <stdlib.h>
+
+    _Noreturn void func() {
+        printf("Exiting program...\n");
+    
+        // Terminate the program without returning
+        exit(0);  
+    }
+
+    int main() {
+        printf("Program started.\n");
+    
+        // This will not return control back to main
+        func(); 
+        printf("This line will never be reached.\n");
+        return 0;
+    }
+```
+```
+output:
+    Program started.
+    Exiting program...
+```
+
+## Return multiple values from a C function?
+In C programming, a function can return only one value directly. However, C also provides several indirect methods in to return multiple values from a function.
+some of them are 
+* using structures (most using method)
+* using arrays
+* using pointers
+
+[for more details](https://www.geeksforgeeks.org/how-can-i-return-multiple-values-from-a-function/?ref=lbp)
+
+## Variadic Functions in C
+variadic functions are functions that can take a variable number of arguments. This feature is useful when the number of arguments for a function is unknown. It takes one fixed argument and then any number of arguments can be passed.
+
+
 ## note:
 * function declaration is also called as `function prototyping`
 * function parameters are also called as `arguments`
@@ -219,7 +262,7 @@ eg:
 ```
 * if you leave the argument section blank,that means that the function can take a variable number of arguments of unknown data type
 * a C function can be return only one value. To return multiple values, we have to use pointers or structures.
-
+* in older C standard like C89, it is possible to define functions without mentioning the return type and by default **int** is implicitly assumed as the return type
 ## FAQ 
 ### Is Function Declaration Necessary?
 * A declaration is necessary if the function is called before its definition and if it is used across multiple files.

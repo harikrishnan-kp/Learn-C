@@ -1,6 +1,6 @@
 ﻿# **Macros and its types in C**
 - A macro is a piece of code in a C program that is replaced by the value of the macro. 
-- Macro is defined by `#define` directive. Whenever a macro name is encountered by the compiler, it replaces the name with the definition of the macro. 
+- Macro is defined by `#define` directive. Whenever a macro name is encountered by the preprocessor, it replaces the name with the definition of the macro. 
 - Macro definitions do not need a semi-colon termination.
 
 ```bash
@@ -11,13 +11,14 @@ syntax
 Example 
 	#define date 31
 ```       
-- `#define date 31` means that everywhere the preprocessor sees the token date in the code, it will replace it with 31 before the actual compilation process begins. This substitution is purely textual and occurs before the compiler sees the code. As a result, date  doesn't have a type and doesn't occupy memory as a variable.
+- `#define date 31` means that everywhere the preprocessor sees the token date in the code, it will replace it with 31 before the actual compilation process begins.
+- This substitution is purely textual and occurs before the compiler sees the code. As a result, date  doesn't have a type and doesn't occupy memory as a variable.
 
 ## **Types of macros in c**
- - Object like macros 
- - Chain macros
- - Function like macros 
- - Multi-Line Macros
+ - `Object like macros` 
+ - `Chain macros`
+ - `Function like macros`
+ - `Multi-Line Macros`
 
 ### **Object-Like Macros**
 It is popularly used to replace a symbolic name with a numerical/variable represented as a constant.
@@ -75,7 +76,22 @@ output: Area of rectangle is: 50
 
 output: Minimum value between 18 and 76 is 18
 ```
+Using a macro without parentheses can lead to incorrect results.
+```
+#define MULTIPLY(a, b) a * b  // No parentheses
+int result = MULTIPLY(2 + 3, 4); 
 
+output:
+	Expands to 2 + 3 * 4 = 14 (wrong)
+```
+Corrected Macro:
+```
+#define MULTIPLY(a, b) ((a) * (b)) // Parentheses added
+int result = MULTIPLY(2 + 3, 4); 
+
+output:
+	Expands to (2 + 3) * (4) = 20
+```
 ### **Chain Macros** 
 Macros inside macros are termed chain macros. In chain macros first of all parent macro is expanded then the child macro is expanded.
 
@@ -125,13 +141,21 @@ An object-like macro could have a multi-line. So to create a multi-line macro yo
 
 output : Elements of Array are: 1  2  3
 ```
-## **note**
-There are also some [Predefined Macros in C](https://www.geeksforgeeks.org/predefined-macros-in-c-with-examples/) which are useful in providing various functionalities to our program.
+## **Predefined macros**
+Predefined macros in C are built-in macros provided by the compiler. They are automatically available and do not require explicit definition.
 
+some predefined macros
+- `__FILE__` :  holds the file name of the currently executing program
+- `__LINE__` : contains the current line number of the program in the compilation. compiler use this to generates error messages during compilation.
+- `__DATE__` : it returns the date at which the program was compiled
+- `__TIME__` : gives the time at which program was compiled
+- `__STDC__` : Defined if using a standard C compiler
+- `__func__` : to print the current function name executing.
+
+for more details visit [Predefined Macros in C](https://www.geeksforgeeks.org/predefined-macros-in-c-with-examples/) 
 
 ## **variables vs macros**
-#define DATE 31     - this is a macros
-int DATE = 31;      this is a variable
+`#define DATE 31` is a macros and `int DATE = 31;` is a variable
 
 **Key Differences between macros and variables**
 - Scope and Lifetime: 
@@ -149,4 +173,19 @@ int DATE = 31;      this is a variable
 - When to Use Each:
 	- Use #define for constants that you don't expect to change and when you need simple text substitution.
  	- Use a variable declaration (int DATE = 31;) when you need a typed constant or a value that can be modified during the program execution.
- 
+## FAQ
+* Can We Define a Macro Without a Value?
+	
+	Yes! In C, you can define a macro without assigning it a value using #define. This is useful for conditional compilation and feature toggling.
+	```
+	eg:
+		#include <stdio.h>
+		#define DEBUG  // Define macro without value
+
+		int main() {
+		#ifdef DEBUG
+			printf("Debug mode is enabled.\n");
+		#endif
+			return 0;
+		}
+	```

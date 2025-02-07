@@ -88,16 +88,17 @@
 
 ### [C Functions](function.md)
 - C Functions
-- User-Defined Function in C
+- Syntax and working of C function
+- Difference between arguments and parameters
 - Parameter Passing Techniques in C
+- Types of functions
 - Importance of Function Prototype in C
+- _Noreturn Function Specifier in C
 - Return Multiple Values From a Function
+- Variadic functions in C
 - main Function in C
-- Implicit Return Type int in C
 - Callbacks in C
 - Nested Functions in C
-- Variadic functions in C
-- _Noreturn Function Specifier in C
 - Predefined Identifier __func__ in C
 - Maths Functions in C
 
