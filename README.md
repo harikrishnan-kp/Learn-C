@@ -32,14 +32,13 @@
 - Compiling a C Program: Behind the Scenes
 - C Comments
 
-### [Tokens in C](tokens%20in%20C/1-tokens.md) 
-- [intro](tokens%20in%20C/1-tokens.md)
-- [punctuations](tokens%20in%20C/2-punctuators.md)
-- [Keywords](tokens%20in%20C/3-keywords.md)
-- [strings](tokens%20in%20C/4-string.md)
-- [Identifiers](tokens%20in%20C/5-Identifiers.md)
-- [constants](tokens%20in%20C/6-Constants.md)
-- [operators](tokens%20in%20C/7-Operators.md)
+### [Tokens in C](tokens%20in%20C/README.md) 
+- [punctuations](tokens%20in%20C/punctuators.md)
+- [Keywords](tokens%20in%20C/keywords.md)
+- [strings](tokens%20in%20C/string.md)
+- [Identifiers](tokens%20in%20C/Identifiers.md)
+- [constants](tokens%20in%20C/Constants.md)
+- [operators](tokens%20in%20C/Operators.md)
 
 
 ### C Variables and Constants

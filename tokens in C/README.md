@@ -6,10 +6,11 @@ In C programming, tokens are the smallest units in a program that have meaningfu
 
 The tokens of C language can be classified into six types based on the functions they are used to perform. The types of C tokens are as follows
 
-* [Punctuators](2-punctuators.md)
-* [Keywords](3-keywords.md)
-* [Strings](4-string.md)
-* [Identifiers](5-Identifiers.md)
-* [Constants](6-Constants.md)
-* [Operators](7-Operators.md)
+* [Punctuators](punctuators.md)
+* [Keywords](keywords.md)
+* [Strings](string.md)
+* [Identifiers](Identifiers.md)
+* [Constants](Constants.md)
+* [Operators](Operators.md)
 
+###  [`<<<`](README.md)/[`>>>`](punctuators.md)
