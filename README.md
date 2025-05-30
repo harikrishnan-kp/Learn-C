@@ -152,6 +152,7 @@
 
 ### C Memory Management
 - [Memory Layout of C Programs](C%20Memory%20Management/Memory%20Layout%20of%20C%20Programs.md)
+- [Memory Allocation in C](C%20Memory%20Management/Memory%20Allocation%20in%20C.md)
 - Dynamic Memory Allocation in C
 - Difference Between malloc() and calloc()
 - What is a Memory Leak?
