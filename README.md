@@ -151,7 +151,7 @@
 - Understanding the “register” Keyword in C
 
 ### C Memory Management
-- Memory Layout of C Programs
+- [Memory Layout of C Programs](C%20Memory%20Management/Memory%20Layout%20of%20C%20Programs.md)
 - Dynamic Memory Allocation in C
 - Difference Between malloc() and calloc()
 - What is a Memory Leak?
