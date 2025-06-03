@@ -47,3 +47,8 @@ refference https://www.youtube.com/watch?v=TFr_kb4UWpA
 * function
 * build
 * structure
+
+# Important resources
+- linux device drivers :
+  - https://embetronicx.com/tutorials/linux/device-drivers/linux-device-driver-part-1-introduction/
+  - https://www.apriorit.com/dev-blog/195-simple-driver-for-linux-os
