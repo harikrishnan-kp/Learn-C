@@ -1,4 +1,4 @@
-## Constants
+# Constants
 Constants are fixed values used in a C program. These values do not change during the execution of the program. Constants can be integers, floating-point numbers, characters, or strings.
 ```
 syntax:
