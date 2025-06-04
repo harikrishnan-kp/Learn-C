@@ -1,4 +1,4 @@
-## Punctuators
+# Punctuators
 The following special symbols are used in C having some special meaning and thus, cannot be used for some other purpose. Some of these are listed below:
 
 * `Brackets[]`: Opening and closing brackets are used as array element references. These indicate single and multidimensional subscripts.
