@@ -32,13 +32,14 @@
 - Compiling a C Program: Behind the Scenes
 - C Comments
 
-### [Tokens in C](tokens%20in%20C/README.md) 
-- [punctuations](tokens%20in%20C/punctuators.md)
-- [Keywords](tokens%20in%20C/keywords.md)
-- [strings](tokens%20in%20C/string.md)
-- [Identifiers](tokens%20in%20C/Identifiers.md)
-- [constants](tokens%20in%20C/Constants.md)
-- [operators](tokens%20in%20C/Operators.md)
+### [Tokens](tokens) 
+- [intro](tokens/README.md)
+- [punctuations](tokens/punctuators.md)
+- [Keywords](tokens/keywords.md)
+- [strings](tokens/string.md)
+- [Identifiers](tokens/Identifiers.md)
+- [constants](tokens/Constants.md)
+- [operators](tokens/Operators.md)
 
 
 ### C Variables and Constants
@@ -150,7 +151,8 @@
 - Understanding the “register” Keyword in C
 
 ### C Memory Management
-- Memory Layout of C Programs
+- [Memory Layout of C Programs](C%20Memory%20Management/Memory%20Layout%20of%20C%20Programs.md)
+- [Memory Allocation in C](C%20Memory%20Management/Memory%20Allocation%20in%20C.md)
 - Dynamic Memory Allocation in C
 - Difference Between malloc() and calloc()
 - What is a Memory Leak?

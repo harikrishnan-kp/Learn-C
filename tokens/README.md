@@ -1,4 +1,4 @@
-# Tokens in C
+# Tokens
 In C programming, tokens are the smallest units in a program that have meaningful representations. Tokens are the building blocks of a C program, and they are recognized by the C compiler to form valid expressions and statements. 
 
 ## Classification of tokens
