@@ -32,7 +32,7 @@
 - Compiling a C Program: Behind the Scenes
 - C Comments
 
-### [Tokens](tokens/README.md) 
+### [Tokens](tokens) 
 - [intro](tokens/README.md)
 - [punctuations](tokens/punctuators.md)
 - [Keywords](tokens/keywords.md)
