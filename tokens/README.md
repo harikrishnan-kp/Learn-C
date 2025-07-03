@@ -13,4 +13,4 @@ The tokens of C language can be classified into six types based on the functions
 * [Constants](Constants.md)
 * [Operators](Operators.md)
 
-###  [`<<<`](README.md)/[`>>>`](punctuators.md)
+###  [`>>>`](punctuators.md)
