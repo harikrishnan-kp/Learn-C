@@ -46,3 +46,11 @@ Example
 * explain 32 standard keywords and their meaning
 * Add Hyper link to keywords given in table to access its explanation easly
 * next page button
+
+
+<div align="left">
+  <a href="punctuators.md">&lt;&lt;&lt; Previous</a>
+</div>
+<div align="right">
+  <a href="string.md">Next &gt;&gt;&gt;</a>
+</div>
