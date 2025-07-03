@@ -14,9 +14,9 @@ The following special symbols are used in C having some special meaning and thus
 * `Tilde(~)`: Bitwise One’s Complement Operator.
 
 <div align="left">
-  <a href="keywords.md">&lt;&lt;&lt; Previous</a>
+  <a href="README.md">&lt;&lt;&lt; Previous</a>
 </div>
 <div align="right">
-  <a href="README.md">Next &gt;&gt;&gt;</a>
+  <a href="keywords.md">Next &gt;&gt;&gt;</a>
 </div>
 
