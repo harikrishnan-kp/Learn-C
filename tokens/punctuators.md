@@ -13,4 +13,4 @@ The following special symbols are used in C having some special meaning and thus
 * `Period (.)`: Used to access members of a structure or union.
 * `Tilde(~)`: Bitwise One’s Complement Operator.
 
-###  [`<<<`](README.md)/[`>>>`](Keywords.md)
+###  [`<<<`](README.md)/[`>>>`](keywords.md)
