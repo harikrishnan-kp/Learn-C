@@ -1,5 +1,5 @@
 # C Preprocessors
-<img src="../utils/Preprocessor.png" height="300" width="340"> 
+<img src="../assets/preprocessor.png" height="300" width="340"> 
 
 * Preprocessors are programs that process the source file before compilation.
 * When a C source file is provided to the build toolchain, it is first passed to the preprocessor.
@@ -41,7 +41,7 @@ The following table lists all the preprocessor directives in C
 
 ## **Types of C Preprocessors**
 - There are 4 Main Types of Preprocessor Directives:  
-  - [File Inclusion](../file%20inclusion.md)
+  - [File Inclusion](../file_inclusion.md)
   - [Macros](../macros.md)
   - [Conditional Compilation](https://www.geeksforgeeks.org/cc-preprocessors/?ref=lbp)
   - [Other directives](https://www.geeksforgeeks.org/cc-preprocessors/?ref=lbp)

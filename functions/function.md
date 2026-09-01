@@ -55,7 +55,7 @@ syntax:
         // body of the function
     }
 ```
-<img src="utils/function/funcDef.png" height="250">
+<img src="../assets/function/func_def.png" height="250">
 
 ```bash
 eg:
@@ -75,7 +75,7 @@ syntax:
 eg:
     sum(10,2);
 ```
-<img src="utils/function/funCall.png" height="250">
+<img src="../assets/function/fun_call.png" height="250">
 
 ## What is the difference between arguments and parameters?
 * `parameters`:

@@ -35,7 +35,7 @@ refference https://www.youtube.com/watch?v=TFr_kb4UWpA
 * use ctrl for going the source of function definition
 * stmcube IDE is linked with stmcubemx,stmcube analyzer and stmcube programmer  
 
-<img src=../utils/stmcube.png>
+<img src=../assets/stmcube.png>
 
 
 ## important c programming topics in embedded

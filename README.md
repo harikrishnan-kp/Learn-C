@@ -2,92 +2,92 @@
 
 # Table of Content
 
-- C Basics
-- C Variables and Constants
-- C Data Types
-- C Input/Output
-- C Operators
-- C Control Statements Decision-Making
-- C Functions
-- C Arrays & Strings
-- C Pointers
-- C User-Defined Data Types
-- C Storage Classes
-- C Memory Management
-- C build process
-- C Preprocessor
-- C File Handling
-- C Error Handling
-- C Programs
+- Basics
+- Variables and Constants
+- Data Types
+- Input/Output
+- Operators
+- Control Statements Decision-Making
+- Functions
+- Arrays & Strings
+- Pointers
+- User-Defined Data Types
+- Storage Classes
+- Memory Management
+- build process
+- Preprocessor
+- File Handling
+- Error Handling
+- Programs
 - Miscellaneous
-- C Interview Questions
+- Interview Questions
 
-### C Basics
+### Basics
 
-- C Language Introduction
+- Language Introduction
 - Features of C Programming Language
-- C Programming Language Standard
+- Programming Language Standard
 - Setting Up C Development Environment
-- C Hello World Program
+- Hello World Program
 - Compiling a C Program: Behind the Scenes
-- C Comments
+- Comments
 
 ### [Tokens](tokens) 
-- [intro](tokens/README.md)
+- [intro](tokens/tokens.md)
 - [punctuations](tokens/punctuators.md)
 - [Keywords](tokens/keywords.md)
 - [strings](tokens/string.md)
-- [Identifiers](tokens/Identifiers.md)
-- [constants](tokens/Constants.md)
-- [operators](tokens/Operators.md)
+- [Identifiers](tokens/identifiers.md)
+- [constants](tokens/constants.md)
+- [operators](tokens/operators.md)
 
 
-### C Variables and Constants
+### Variables and Constants
 
-- C Variables
-- Constants in C
-- Const Qualifier in C
+- Variables
+- Constants
+- Const Qualifier
 - Different Ways to Declare Variable as Constant in C
 - Scope Rules in C
 - Internal Linkage and External Linkage in C
-- Global Variables in C
+- Global Variables
 
-### C Data Types
-- Data Types in C
+### Data Types
+- Data Types
 - Data Type Modifiers in C
-- Literals in C
+- Literals
 - Escape Sequence in C
 - bool in C
 - Integer Promotions in C
 - Character Arithmetic in C
-- Type Conversion in C
+- Type Conversion
 
-### C Input/Output
-- Basic Input and Output in C
-- Format Specifiers in C
-- printf in C
-- scanf in C
-- Scansets in C
+### Input/Output
+- Basic Input and Output
+- Format Specifiers
+- printf
+- scanf
+- Scansets
 - Formatted and Unformatted Input and Output Functions
 
-### C Control Statements Decision-Making
+### Control Statements Decision-Making
 - Decision-Making in C
-- C if Statement
-- C if…else Statement
-- C if-else-if Ladder
-- Switch Statement in C
+- if Statement
+- if…else Statement
+- if-else-if Ladder
+- Switch Statement
 - Using Range in switch case in C
-- Loops in C
-- C for Loop
-- while looping in C
-- do…while Loop in C
+- Loops
+- for Loop
+- while looping
+- do while Loop
 - for versus while Loop
-- continue Statement in C
-- break Statement in C
-- goto Statement in C
+- continue Statement
+- break Statement
+- goto Statement
 
-### [C Functions](function.md)
-- C Functions
+### [Functions](functions/function.md)
+- Functions
 - Syntax and working of C function
 - Difference between arguments and parameters
 - Parameter Passing Techniques in C
@@ -102,12 +102,12 @@
 - Predefined Identifier __func__ in C
 - Maths Functions in C
 
-### C Arrays & Strings
-- C Arrays
-- Properties of Array in C
-- Multidimensional Arrays in C
-- Initialization of Multidimensional Arrays in C
-- Pass Array to Functions in C
+### Arrays & Strings
+- Arrays
+- Properties of Array
+- Multidimensional Arrays
+- Initialization of Multidimensional Arrays
+- Pass Array to Functions
 - Pass a 2D Array as a Parameter in C
 - Data Types for Which Array is Not Possible
 - Pass an Array by Value in C
@@ -116,8 +116,8 @@
 - Difference Between Single Quoted and Double Quoted Initialization
 - String Functions in C
 
-### C Pointers
-- C Pointers
+### Pointers
+- Pointers
 - Pointer Arithmetics in C
 - Pointer to Pointer (Double Pointer) in C
 - Function Pointer in C
@@ -129,19 +129,19 @@
 - Near, Far and Huge Pointers in C
 - restrict Keyword in C
 
-### C User-Defined Data Types
-- C Structures
+### User-Defined Data Types
+- Structures
 - dot (.) Operator in C
-- C typedef
+- typedef
 - Structure Member Alignment, Padding and Data Packing
 - Flexible Array Members in a Structure in C
-- C Unions
+- Unions
 - Bit Fields in C
 - Difference Between Structure and Union in C
 - Anonymous Union and Structure in C
 - Enumeration (or enum) in C
 
-### C Storage Classes
+### Storage Classes
 - Storage Classes in C
 - extern Keyword in C
 - Static Variables in C
@@ -150,9 +150,9 @@
 - Understanding “volatile” Qualifier in C
 - Understanding the “register” Keyword in C
 
-### C Memory Management
-- [Memory Layout of C Programs](C%20Memory%20Management/Memory%20Layout%20of%20C%20Programs.md)
-- [Memory Allocation in C](C%20Memory%20Management/Memory%20Allocation%20in%20C.md)
+### Memory Management
+- [Memory Layout of C Programs](memory_management/memory_layout_of_c_programs.md)
+- [Memory Allocation in C](memory_management/memory_allocation_in_c.md)
 - Dynamic Memory Allocation in C
 - Difference Between malloc() and calloc()
 - What is a Memory Leak?
@@ -160,16 +160,16 @@
 - Dynamically Allocate a 2D Array in C
 - Dynamically Growing Array in C
 
-### [C build process](C-build/C%20build%20process.md)
+### [build process](build/c_build_process.md)
 - how to build a C program
 - Preprocessing
 - Compiling
 - Assembly
 - Linking
 
-### C Preprocessor
-- C Preprocessors
-- C Preprocessor Directives
+### Preprocessor
+- Preprocessors
+- Preprocessor Directives
 - How a Preprocessor Works in C?
 - Header Files in C
 - Difference Between Header Files “stdio.h” and “stdlib.h”
@@ -184,28 +184,28 @@
 - typedef versus #define in C
 - Difference Between #define and const in C
 
-### C File Handling
+### File Handling
 - Basics of File Handling in C
-- C fopen() Function
+- fopen() Function
 - EOF, getc() and feof() in C
 - fgets() and gets() in C
 - fseek() vs rewind() in C
 - Return Type of getchar(), fgetc() and getc()
 - Read/Write Structure From/to a File in C
-- C Program to Print Contents of File
-- C Program to Delete a File
-- C Program to Merge Contents of Two Files into a Third File
+- Program to Print Contents of File
+- Program to Delete a File
+- Program to Merge Contents of Two Files into a Third File
 - Difference Between printf, sprintf and fprintf
 - Difference Between getc(), getchar(), getch() and getche()
 
-### C Error Handling
+### Error Handling
 
 - Error Handling in C
 - Using goto for Exception Handling in C
 - Error Handling During File Operations in C
-- C Program to Handle Divide By Zero and Multiple Exceptions
+- Program to Handle Divide By Zero and Multiple Exceptions
 
-### C Programs
+### Programs
 
 - Basic C Programs
 - Control Flow Programs

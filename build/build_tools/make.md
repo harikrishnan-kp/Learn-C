@@ -30,7 +30,7 @@ make reads a set of rules and dependencies from a Makefile, and determines which
 * Flexibility: Can handle projects with multiple files,directories, and configurations.
 
 ## Structure of Makefile
-<img src=../../utils/makefile.png width=450>
+<img src=../../assets/makefile.png width=450>
 
 ## Example Makefile
 ```bash
@@ -172,9 +172,9 @@ eg:
 
 
 # Refferences 
-<img src=../../utils/buildcommand1.png>
+<img src=../../assets/build_command1.png>
 
-<img src=../../utils/buildcommand2.png>
+<img src=../../assets/build_command2.png>
 
 ## notes
 * make can be used for flashing too
